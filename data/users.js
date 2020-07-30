@@ -7,7 +7,6 @@ const users = [
 	{ id: 6, name: 'Nataha', age: 20 },
 	{ id: 7, name: 'Irina', age: 18 },
 	{ id: 8, name: 'Petr', age: 23 },
-	{ id: 9, name: 'Edik', age: 15},
 ];
 
 module.exports = users;
