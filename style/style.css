@@ -18,7 +18,7 @@
 
   .container{
       width: 80%;
-      height: 100vh;
+      height: 100%;
       margin: 0 auto;
       background-color: rgb(255, 255, 255, 0.8);
       border-radius: 20px 20px 10px 10px;
@@ -60,3 +60,25 @@
       width: 200px;
       height: 25px;
   }
+  
+/* Вторая часть с автомобилями */
+
+.car{
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+}
+.carImg {
+   height: 250px;
+}
+.car_info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.car_info p{
+    margin-right: 40px;
+}
+.imgAndP{
+    margin-right: 30px;
+}
