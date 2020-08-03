@@ -18,8 +18,8 @@
 			"methods": ["POST"]
 		},
 		{
-			"src": "/cars/$id",
-			"dest": "/server.js",
+			"src": "/cars/(?<id>[^/]*)",
+			"dest": "/server.js?id=$id",
 			"methods": ["GET"]
 		},
 		{
