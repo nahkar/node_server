@@ -23,13 +23,13 @@
 			"methods": ["GET"]
 		},
 		{
-			"src": "/cars/$id",
-			"dest": "/server.js",
+			"src": "/cars/(?<id>[^/]*)",
+			"dest": "/server.js?id=$id",
 			"methods": ["PUT"]
 		},
 		{
-			"src": "/cars/$id",
-			"dest": "/server.js",
+			"src": "/cars/(?<id>[^/]*)",
+			"dest": "/server.js?id=$id",
 			"methods": ["DELETE"]
 		}
 	]
