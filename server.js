@@ -45,9 +45,14 @@ app.get('/cars/:id', async (req, res) => {
 });
 
 app.post('/cars', async (req, res) => {
-	const { name } = req.body;
+	const { brand, model, year, mileage, photo_link, description } = req.body;
 	const car = new Car({
-		name,
+		brand,
+		model,
+		year,
+		mileage,
+		photo_link,
+		description,
 	});
 	let createdCar;
 	try {
@@ -67,10 +72,10 @@ app.delete('/cars/:id', async (req, res) => {
 
 app.put('/cars/:id', async (req, res) => {
 	const { id } = req.params;
-	const { name } = req.body;
+	const { brand, model, year, mileage, photo_link, description } = req.body;
 	let car;
 	try {
-		car = await Car.findByIdAndUpdate(id, { name }, { new: true });
+		car = await Car.findByIdAndUpdate(id, { brand, model, year, mileage, photo_link, description }, { new: true });
 	} catch (error) {}
 	return res.json(car);
 });
