@@ -18,17 +18,17 @@
 			"methods": ["POST"]
 		},
 		{
-			"src": "/cars/:id",
+			"src": "/cars/$id",
 			"dest": "/server.js",
 			"methods": ["GET"]
 		},
 		{
-			"src": "/cars/:id",
+			"src": "/cars/$id",
 			"dest": "/server.js",
 			"methods": ["PUT"]
 		},
 		{
-			"src": "/cars/:id",
+			"src": "/cars/$id",
 			"dest": "/server.js",
 			"methods": ["DELETE"]
 		}
