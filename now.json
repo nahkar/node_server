@@ -16,6 +16,21 @@
 			"src": "/cars",
 			"dest": "/server.js",
 			"methods": ["POST"]
+		},
+		{
+			"src": "/cars/:id",
+			"dest": "/server.js",
+			"methods": ["GET"]
+		},
+		{
+			"src": "/cars/:id",
+			"dest": "/server.js",
+			"methods": ["PUT"]
+		},
+		{
+			"src": "/cars/:id",
+			"dest": "/server.js",
+			"methods": ["DELETE"]
 		}
 	]
 }
