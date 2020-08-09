@@ -7,6 +7,8 @@ const Car = require('./models/Car');
 const PORT = 3050;
 const app = express();
 
+app.use(cors());
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // ! Connect Mongo
@@ -24,8 +26,6 @@ dbConnection.on('error', (err) => {
 dbConnection.on('open', () => {
 	console.warn(`Connected to DB`);
 });
-
-app.use(cors());
 
 app.get('/cars', async (req, res) => {
 	let cars = [];
